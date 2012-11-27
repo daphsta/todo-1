@@ -8,8 +8,9 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'To Do List',
-
-	// preloading 'log' component
+        'theme' => 'bootstrap',
+	
+        // preloading 'log' component
 	'preload'=>array(
                 'log',
                 'bootstrap', // preload the bootstrap component
@@ -41,7 +42,6 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -50,7 +50,6 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),

@@ -1,0 +1,164 @@
+2012/11/27 16:48:38 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootNavbar" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\wamp\www\yii\framework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 D:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 D:\wamp\www\todo\themes\bootstrap\views\layouts\main.php(60): CBaseController->widget('bootstrap.widge...', Array)
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#5 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#6 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#7 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="row...')
+#8 D:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="row...')
+#9 D:\wamp\www\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\wamp\www\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\wamp\www\todo\themes\bootstrap\views\layouts\column1.php(5): CBaseController->endContent()
+#12 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#13 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#14 D:\wamp\www\yii\framework\web\CController.php(785): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#15 D:\wamp\www\todo\protected\controllers\SiteController.php(32): CController->render('index')
+#16 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#21 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#22 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\wamp\www\todo\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/todo/index.php?r=site/index
+HTTP_REFERER=http://localhost/todo/index.php?r=site/page&view=about
+---
+2012/11/27 16:51:32 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootNavbar" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\wamp\www\yii\framework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 D:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 D:\wamp\www\todo\themes\bootstrap\views\layouts\main.php(60): CBaseController->widget('bootstrap.widge...', Array)
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#5 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#6 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#7 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="row...')
+#8 D:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="row...')
+#9 D:\wamp\www\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\wamp\www\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\wamp\www\todo\themes\bootstrap\views\layouts\column1.php(5): CBaseController->endContent()
+#12 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#13 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#14 D:\wamp\www\yii\framework\web\CController.php(785): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#15 D:\wamp\www\todo\protected\controllers\SiteController.php(32): CController->render('index')
+#16 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#21 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#22 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\wamp\www\todo\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/todo/index.php?r=site/index
+HTTP_REFERER=http://localhost/todo/index.php?r=site/page&view=about
+---
+2012/11/27 16:56:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "twoColumns".' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('twoColumns')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('twoColumns')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/twoColumns')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\todo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/todo/index.php/site/twoColumns
+HTTP_REFERER=http://localhost/todo/index.php/site/page?view=about
+---
+2012/11/27 16:56:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "twoColumns".' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('twoColumns')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('twoColumns')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/twoColumns')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\todo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/todo/index.php/site/twoColumns
+HTTP_REFERER=http://localhost/todo/index.php/site/twoColumns
+---
+2012/11/27 17:03:30 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootActiveForm" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\wamp\www\yii\framework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 D:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(190): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 D:\wamp\www\todo\protected\views\site\contact.php(37): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#5 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#6 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#7 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#8 D:\wamp\www\todo\protected\controllers\SiteController.php(72): CController->render('contact', Array)
+#9 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('contact')
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/contact')
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\todo\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/todo/index.php/site/contact
+HTTP_REFERER=http://localhost/todo/index.php/site/index
+---
+2012/11/27 17:06:24 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootActiveForm" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\wamp\www\yii\framework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 D:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(190): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 D:\wamp\www\todo\protected\views\site\login.php(26): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#5 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#6 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#7 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#8 D:\wamp\www\todo\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\todo\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/todo/index.php/site/login
+HTTP_REFERER=http://localhost/todo/index.php/site/index
+---
+2012/11/27 17:19:08 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (D:\wamp\www\todo\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#2 D:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#4 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\wamp\www\todo\index.php(13): CWebApplication->run()
+REQUEST_URI=/todo/index.php/site/contact
+in D:\wamp\www\todo\protected\controllers\SiteController.php (67)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 17:20:11 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (D:\wamp\www\todo\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#2 D:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#4 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\wamp\www\todo\index.php(13): CWebApplication->run()
+REQUEST_URI=/todo/index.php/site/contact
+in D:\wamp\www\todo\protected\controllers\SiteController.php (67)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 17:20:27 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (D:\wamp\www\todo\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#2 D:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#4 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\wamp\www\todo\index.php(13): CWebApplication->run()
+REQUEST_URI=/todo/index.php/site/contact
+in D:\wamp\www\todo\protected\controllers\SiteController.php (67)
+in D:\wamp\www\todo\index.php (13)
