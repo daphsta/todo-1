@@ -162,3 +162,283 @@ Stack trace:
 REQUEST_URI=/todo/index.php/site/contact
 in D:\wamp\www\todo\protected\controllers\SiteController.php (67)
 in D:\wamp\www\todo\index.php (13)
+2012/11/27 21:43:39 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in D:\wamp\www\yii\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\wamp\www\todo\protected\modules\user\models\User.php(33): CActiveRecord::model('User')
+#2 D:\wamp\www\todo\protected\modules\user\components\UserIdentity.php(27): User::model()
+#3 D:\wamp\www\todo\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 D:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 D:\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\wamp\www\todo\protected\controllers\SiteController.php(94): CModel->validate()
+#8 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\todo\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/todo/index.php/site/login
+HTTP_REFERER=http://localhost/todo/index.php/site/login
+---
+2012/11/27 21:44:47 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in D:\wamp\www\yii\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\wamp\www\todo\protected\modules\user\models\User.php(33): CActiveRecord::model('User')
+#2 D:\wamp\www\todo\protected\modules\user\components\UserIdentity.php(27): User::model()
+#3 D:\wamp\www\todo\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 D:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 D:\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\wamp\www\todo\protected\controllers\SiteController.php(94): CModel->validate()
+#8 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\todo\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/todo/index.php/site/login
+HTTP_REFERER=http://localhost/todo/index.php/site/login
+---
+2012/11/27 21:45:00 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in D:\wamp\www\yii\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\wamp\www\todo\protected\modules\user\models\User.php(33): CActiveRecord::model('User')
+#2 D:\wamp\www\todo\protected\modules\user\components\UserIdentity.php(27): User::model()
+#3 D:\wamp\www\todo\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 D:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 D:\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\wamp\www\todo\protected\controllers\SiteController.php(94): CModel->validate()
+#8 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\todo\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/todo/index.php/site/login
+HTTP_REFERER=http://localhost/todo/index.php/site/login
+---
+2012/11/27 21:47:47 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in D:\wamp\www\yii\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\wamp\www\todo\protected\modules\user\models\User.php(33): CActiveRecord::model('User')
+#2 D:\wamp\www\todo\protected\modules\user\components\UserIdentity.php(27): User::model()
+#3 D:\wamp\www\todo\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 D:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 D:\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\wamp\www\todo\protected\controllers\SiteController.php(94): CModel->validate()
+#8 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\todo\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/todo/index.php/site/login
+HTTP_REFERER=http://localhost/todo/index.php/site/login
+---
+2012/11/27 21:50:51 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.lastvisit_at". Note, the column must exist in the table or be an expression with alias.' in D:\wamp\www\yii\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\wamp\www\yii\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\wamp\www\yii\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\wamp\www\todo\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\wamp\www\todo\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\wamp\www\todo\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\wamp\www\todo\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/todo/index.php/site/login
+HTTP_REFERER=http://localhost/todo/index.php/site/login
+---
+2012/11/27 21:52:25 [error] [php] Object of class WebUser could not be converted to string (D:\wamp\www\todo\themes\bootstrap\views\layouts\main.php:45)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 D:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 D:\wamp\www\todo\themes\bootstrap\views\layouts\column1.php(5): SiteController->endContent()
+#6 D:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#7 D:\wamp\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 D:\wamp\www\yii\framework\web\CController.php(785): SiteController->renderFile()
+#9 D:\wamp\www\todo\protected\controllers\SiteController.php(32): SiteController->render()
+#10 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#13 D:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\wamp\www\todo\index.php(13): CWebApplication->run()
+REQUEST_URI=/todo/index.php
+in D:\wamp\www\todo\themes\bootstrap\views\layouts\main.php (45)
+in D:\wamp\www\todo\themes\bootstrap\views\layouts\column1.php (5)
+in D:\wamp\www\todo\protected\controllers\SiteController.php (32)
+2012/11/27 21:59:29 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\wamp\www\yii\framework\YiiBase.php:318
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 D:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ProfileController), 'bootstrap.widge...', Array)
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 D:\wamp\www\todo\themes\bootstrap\views\layouts\column2.php(10): CBaseController->widget('bootstrap.widge...', Array)
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#5 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#6 D:\wamp\www\yii\framework\web\CController.php(785): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#7 D:\wamp\www\todo\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#8 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#9 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/profile')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\todo\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/todo/index.php/user/profile
+HTTP_REFERER=http://localhost/todo/index.php/user/login
+---
+2012/11/27 22:14:48 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:19:15 [error] [exception.CException] exception 'CException' with message 'Property "TbActiveForm.disableAjaxValidationAttributes" is not defined.' in D:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('disableAjaxVali...', Array)
+#1 D:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(RegistrationController), 'bootstrap.widge...', Array)
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(190): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 D:\wamp\www\todo\protected\modules\user\views\user\registration.php(29): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#5 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#6 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#7 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('/user/registrat...', Array, true)
+#8 D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php(77): CController->render('/user/registrat...', Array)
+#9 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#10 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/registrati...')
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\todo\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/todo/index.php/user/registration
+HTTP_REFERER=http://localhost/todo/index.php/user/login
+---
+2012/11/27 22:19:45 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:19:46 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:20:02 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:21:27 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:27:39 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:27:42 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:28:23 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:28:27 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:29:39 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:30:06 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:33:45 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:33:54 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:01 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:03 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:05 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:10 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:12 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:20 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:22 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:26 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:28 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:41 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:49 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:34:52 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (D:\wamp\www\todo\protected\modules\user\UserModule.php:226)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#1 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\wamp\www\yii\framework\web\CController.php(287): RegistrationController->runAction()
+#3 D:\wamp\www\yii\framework\web\CController.php(266): RegistrationController->runActionWithFilters()
+#4 D:\wamp\www\yii\framework\web\CWebApplication.php(283): RegistrationController->run()
+#5 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\wamp\www\todo\index.php(13): CWebApplication->run()
+REQUEST_URI=/todo/index.php/user/registration
+in D:\wamp\www\todo\protected\modules\user\UserModule.php (226)
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (54)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:36:04 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:36:05 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:36:07 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)
+2012/11/27 22:36:22 [warning] [application] Failed to set unsafe attribute "verifyCode" of "RegistrationForm".
+in D:\wamp\www\todo\protected\modules\user\controllers\RegistrationController.php (30)
+in D:\wamp\www\todo\index.php (13)

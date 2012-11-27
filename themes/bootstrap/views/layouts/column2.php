@@ -4,7 +4,7 @@
 
         <div class="well" style="padding: 8px 0;">
             <?php
-            $this->widget('bootstrap.widgets.BootMenu', array(
+            $this->widget('bootstrap.widgets.TbMenu', array(
                 'type' => 'list',
                 'items' => $this->menu,
             ));

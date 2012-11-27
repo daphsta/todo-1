@@ -11,11 +11,15 @@ $this->breadcrumbs=array(
 
 <h1>Contact Us</h1>
 
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
+<?php if(Yii::app()->user->hasFlash('success')): ?>
 
-<div class="flash-success">
-	<?php echo Yii::app()->user->getFlash('contact'); ?>
-</div>
+<?php 
+    $this->widget('bootstrap.widgets.TbAlert', array(
+        'alerts'=>array( // configurations per alert type
+            'success'=>array('block'=>true, 'fade'=>true, 'closeText'=>'&times;'), // success, info, warning, error or danger
+        ),
+    )); 
+?>
 
 <?php else: ?>
 

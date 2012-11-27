@@ -35,22 +35,10 @@
                                 array('label' => 'Home', 'url' => array('/site/index')),
                                 array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                                 array('label' => 'Contact', 'url' => array('/site/contact')),
-                            ),
-                        ),
-                        array(
-                            'class' => 'bootstrap.widgets.TbMenu',
-                            'htmlOptions' => array('class' => 'pull-right'),
-                            'items' => array(
-                                array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
-                                array(
-                                    'label' => 'Welcome ' . Yii::app()->user->id,
-                                    'url' => '#',
-                                    'visible' => !Yii::app()->user->isGuest,
-                                    'items' => array(
-                                        array('label' => 'Logout', 'url' => array('/site/logout')),
-                                    ),
-                                ),
-                            ),
+                                array('url' => Yii::app()->getModule('user')->loginUrl, 'label' => Yii::app()->getModule('user')->t("Login"), 'visible' => Yii::app()->user->isGuest),
+                                array('url' => Yii::app()->getModule('user')->registrationUrl, 'label' => Yii::app()->getModule('user')->t("Register"), 'visible' => Yii::app()->user->isGuest),
+                                array('url' => Yii::app()->getModule('user')->profileUrl, 'label' => Yii::app()->getModule('user')->t("Profile"), 'visible' => !Yii::app()->user->isGuest),
+                                array('url' => Yii::app()->getModule('user')->logoutUrl, 'label' => Yii::app()->getModule('user')->t("Logout") . ' (' . Yii::app()->user->name . ')', 'visible' => !Yii::app()->user->isGuest),),
                         ),
                     ),
                 ));
@@ -74,7 +62,7 @@
         </div>
         <div id="footer">
             <div class="container-fluid">
-                Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+                Copyright &copy; <?php echo date('Y'); ?> by GeN Creations.<br/>
                 All Rights Reserved.<br/>
                 <?php echo Yii::powered(); ?>
             </div>
