@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 27, 2012 at 10:49 PM
+-- Generation Time: Nov 28, 2012 at 04:50 AM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -40,9 +40,7 @@ CREATE TABLE IF NOT EXISTS `tbl_profiles` (
 
 INSERT INTO `tbl_profiles` (`user_id`, `lastname`, `firstname`) VALUES
 (1, 'Admin', 'Administrator'),
-(2, 'Demo', 'Demo'),
-(3, 'nur', 'evg'),
-(4, 'nur', 'evg');
+(2, 'Demo', 'Demo');
 
 -- --------------------------------------------------------
 
@@ -83,6 +81,31 @@ INSERT INTO `tbl_profiles_fields` (`id`, `varname`, `title`, `field_type`, `fiel
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_todo`
+--
+
+DROP TABLE IF EXISTS `tbl_todo`;
+CREATE TABLE IF NOT EXISTS `tbl_todo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT '1',
+  `todo` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_user_idx` (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `tbl_todo`
+--
+
+INSERT INTO `tbl_todo` (`id`, `user_id`, `status`, `todo`) VALUES
+(1, 2, 0, 'Use Yii Framework'),
+(2, 2, 1, 'Tell why Yii ?'),
+(3, 2, 0, 'Upload to github');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_users`
 --
 
@@ -110,9 +133,7 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
 
 INSERT INTO `tbl_users` (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`) VALUES
 (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', '2012-11-27 21:42:09', '2012-11-27 20:13:27', 1, 1),
-(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '2012-11-27 21:42:09', '2012-11-27 20:12:14', 0, 1),
-(3, 'gen', '1a1dc91c907325c69271ddf0c944bc72', 'mail@mail.com', '415bc3977845e20d7b7467acf2cf12c7', '2012-11-27 22:34:51', '0000-00-00 00:00:00', 0, 0),
-(4, 'gen1', '1a1dc91c907325c69271ddf0c944bc72', 'mail@mail1.com', '780dfb64d16df4b7d8283fa96c93eed1', '2012-11-27 22:36:23', '0000-00-00 00:00:00', 0, 1);
+(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '2012-11-27 21:42:09', '2012-11-28 02:40:40', 0, 1);
 
 --
 -- Constraints for dumped tables
@@ -123,6 +144,12 @@ INSERT INTO `tbl_users` (`id`, `username`, `password`, `email`, `activkey`, `cre
 --
 ALTER TABLE `tbl_profiles`
   ADD CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `tbl_users` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `tbl_todo`
+--
+ALTER TABLE `tbl_todo`
+  ADD CONSTRAINT `fk_user` FOREIGN KEY (`user_id`) REFERENCES `tbl_users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

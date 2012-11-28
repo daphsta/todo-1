@@ -34,13 +34,12 @@ $this->breadcrumbs = array(
 
     <?php echo $form->textFieldRow($model, 'username', array('class' => 'span3')) ?>
     <?php echo $form->passwordFieldRow($model, 'password', array('tip' => 'demo/demo or admin/admin', 'class' => 'span3')); ?>
+    <p>You can login with demo/demo or admin/admin</p>
     <?php echo $form->checkBoxRow($model, 'rememberMe'); ?> 
 
-    <div>
-        <p class="hint">
-            <?php echo CHtml::link(UserModule::t("Register"), Yii::app()->getModule('user')->registrationUrl); ?>  <?php // echo CHtml::link(UserModule::t("Lost Password?"),Yii::app()->getModule('user')->recoveryUrl); ?>
-        </p>
-    </div>
+    <p>
+        <?php echo CHtml::link(UserModule::t("Register"), Yii::app()->getModule('user')->registrationUrl); ?>  <?php // echo CHtml::link(UserModule::t("Lost Password?"),Yii::app()->getModule('user')->recoveryUrl); ?>
+    </p>
 
     <?php echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Login', array('class' => 'btn btn-primary', 'type' => 'submit')); ?>
 

@@ -25,3 +25,8 @@ body, html {
 .hero-unit h1 {
   font-size: 3em;
 }
+.done {
+    color: #ccc;
+    font-weight: normal;
+    text-decoration: line-through;
+}
