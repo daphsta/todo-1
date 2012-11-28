@@ -17,7 +17,9 @@
         ),
         'htmlOptions' => array('class' => 'well',
         ),
-            ));
+    ));
+    if ($model->isNewRecord) $btnText = 'Create';
+    else $btnText = 'Update';
     ?>
 
     <p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -26,7 +28,7 @@
 
     <?php echo $form->textFieldRow($model, 'todo', array('class' => 'span3', 'size' => 60, 'maxlength' => 200)) ?>
 
-    <?php echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Create To-do', array('class' => 'btn btn-primary', 'type' => 'submit')); ?>
+    <?php echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> '.$btnText.' To-do', array('class' => 'btn btn-primary', 'type' => 'submit')); ?>
 
     <?php $this->endWidget(); ?>
 

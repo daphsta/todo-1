@@ -105,10 +105,13 @@ class TodoController extends Controller {
     public function actionDone() {
         $user_id = Yii::app()->user->id;
 
-        $model = Todo::model()->findByAttributes(array(
-            'user_id' => $user_id,
-            'id' => $_POST['id']
-        ));
+        if (Yii::app()->user->isAdmin())
+            $model = $this->loadModel($_POST['id']);
+        else
+            $model = Todo::model()->findByAttributes(array(
+                'user_id' => $user_id,
+                'id' => $_POST['id']
+                    ));
         $model->status = 0;
         $model->save();
 
@@ -121,10 +124,13 @@ class TodoController extends Controller {
     public function actionUndo() {
         $user_id = Yii::app()->user->id;
 
-        $model = Todo::model()->findByAttributes(array(
-            'user_id' => $user_id,
-            'id' => $_POST['id']
-        ));
+        if (Yii::app()->user->isAdmin())
+            $model = $this->loadModel($_POST['id']);
+        else
+            $model = Todo::model()->findByAttributes(array(
+                'user_id' => $user_id,
+                'id' => $_POST['id']
+                    ));
         $model->status = 1;
         $model->save();
 
@@ -137,7 +143,15 @@ class TodoController extends Controller {
      * @param integer $id the ID of the model to be deleted
      */
     public function actionDelete($id) {
-        $this->loadModel($id)->delete();
+        $user_id = Yii::app()->user->id;
+
+        if (Yii::app()->user->isAdmin())
+            $this->loadModel($_POST['id'])->delete();
+        else
+            Todo::model()->findByAttributes(array(
+                'user_id' => $user_id,
+                'id' => $_POST['id']
+            ))->delete();
 
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
@@ -145,10 +159,14 @@ class TodoController extends Controller {
     }
 
     /**
-     * Lists all models.
+     * Lists all todos for current user.
      */
     public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('Todo');
+        $criteria = array(
+            'order' => 'id DESC',
+            'condition' => 'user_id = ' . Yii::app()->user->id,
+        );
+        $dataProvider = new CActiveDataProvider('Todo', array('criteria' => $criteria));
         $this->render('index', array(
             'dataProvider' => $dataProvider,
         ));

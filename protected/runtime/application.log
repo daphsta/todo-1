@@ -2048,3 +2048,148 @@ Stack trace:
 REQUEST_URI=/todo/index.php/user/todo
 HTTP_REFERER=http://localhost/todo/index.php/user/login
 ---
+2012/11/28 13:25:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('todo/admin')
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\todo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/todo/index.php/todo/admin
+HTTP_REFERER=http://localhost/todo/index.php/todo
+---
+2012/11/28 13:29:07 [error] [php] Creating default object from empty value (D:\wamp\www\todo\protected\controllers\TodoController.php:128)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): TodoController->runAction()
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): TodoController->filterAccessControl()
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): TodoController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(283): TodoController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\todo\index.php(13): CWebApplication->run()
+REQUEST_URI=/todo/index.php/todo/undo
+in D:\wamp\www\todo\protected\controllers\TodoController.php (128)
+in D:\wamp\www\todo\index.php (13)
+2012/11/28 13:29:13 [error] [php] Creating default object from empty value (D:\wamp\www\todo\protected\controllers\TodoController.php:128)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): TodoController->runAction()
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): TodoController->filterAccessControl()
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): TodoController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(283): TodoController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\todo\index.php(13): CWebApplication->run()
+REQUEST_URI=/todo/index.php/todo/undo
+in D:\wamp\www\todo\protected\controllers\TodoController.php (128)
+in D:\wamp\www\todo\index.php (13)
+2012/11/28 13:29:58 [error] [php] Creating default object from empty value (D:\wamp\www\todo\protected\controllers\TodoController.php:128)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): TodoController->runAction()
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): TodoController->filterAccessControl()
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): TodoController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(283): TodoController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\todo\index.php(13): CWebApplication->run()
+REQUEST_URI=/todo/index.php/todo/undo
+in D:\wamp\www\todo\protected\controllers\TodoController.php (128)
+in D:\wamp\www\todo\index.php (13)
+2012/11/28 13:33:14 [error] [exception.CException] exception 'CException' with message 'Todo and its behaviors do not have a method or closure named "isNewRecord".' in D:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('isNewRecord', Array)
+#1 D:\wamp\www\todo\protected\views\todo\_form.php(21): CActiveRecord->__call('isNewRecord', Array)
+#2 D:\wamp\www\todo\protected\views\todo\_form.php(21): Todo->isNewRecord()
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#5 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#6 D:\wamp\www\todo\protected\views\todo\update.php(21): CController->renderPartial('_form', Array)
+#7 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#8 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#9 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#10 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#11 D:\wamp\www\todo\protected\controllers\TodoController.php(99): CController->render('update', Array)
+#12 [internal function]: TodoController->actionUpdate('3')
+#13 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TodoController), Array)
+#14 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TodoController), Object(ReflectionMethod), Array)
+#15 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('update')
+#24 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('todo/update')
+#25 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 D:\wamp\www\todo\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/todo/index.php/todo/update/3
+HTTP_REFERER=http://localhost/todo/index.php/todo/index
+---
+2012/11/28 13:44:49 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isAdmin" is not defined.' in D:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\auth\CWebUser.php(141): CComponent->__get('isAdmin')
+#1 D:\wamp\www\todo\protected\views\todo\_form.php(23): CWebUser->__get('isAdmin')
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#4 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#5 D:\wamp\www\todo\protected\views\todo\create.php(18): CController->renderPartial('_form', Array)
+#6 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\tod...')
+#7 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\tod...', Array, true)
+#8 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\tod...', Array, true)
+#9 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 D:\wamp\www\todo\protected\controllers\TodoController.php(77): CController->render('create', Array)
+#11 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): TodoController->actionCreate()
+#12 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#21 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('todo/create')
+#22 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\wamp\www\todo\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/todo/index.php/todo/create
+HTTP_REFERER=http://localhost/todo/index.php/todo
+---
+2012/11/28 13:51:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('todo/admin')
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\todo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/todo/index.php/todo/admin
+HTTP_REFERER=http://localhost/todo/index.php/todo/create
+---
