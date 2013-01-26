@@ -84,11 +84,11 @@ return array(
 //        ),
         // uncomment the following to use a MySQL database
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=todo',
+            'connectionString' => 'mysql:host=localhost;dbname=gencreat_todo',
             'tablePrefix' => 'tbl_',
             'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => 'mysql',
+            'username' => 'gencreat_todo',
+            'password' => 'todo2012',
             'charset' => 'utf8',
         ),
         'errorHandler' => array(
